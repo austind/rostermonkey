@@ -1,0 +1,7 @@
+Vendor info:
+ - Login URL:      https://login.example.com/
+ - Admin account:  username
+ - Admin password: password
+ - Documentation:  http://www.example.com/support/
+ - Support email:  support@example.com
+ - Support phone:  (800) 555-0248

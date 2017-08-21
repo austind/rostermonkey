@@ -1,0 +1,26 @@
+<AssetImportConverterProperties version="1">
+  <AssetTemplate>exported.xml</AssetTemplate>
+  <NumberOfCSVFields>2</NumberOfCSVFields>
+  <InputRowsToSkip>0</InputRowsToSkip>
+  <KeyField>col0</KeyField> <!-- this is the field which is scanned for the asset template type -->
+  <!-- the Fields below are referenced in different places, such as KeyField above, FieldMapping, etc. -->
+  <Field>
+    <Name>col0</Name>
+    <Expression>${0}</Expression> <!-- for example, ${0} indicates first column of the csv -->
+  </Field>
+  <Field>
+    <Name>col1</Name>
+    <Expression>${1}</Expression>
+  </Field>
+  <TemplateAssociation>
+    <KeyFieldValue>A</KeyFieldValue> <!-- template matches if KeyField expression matches this text -->
+    <TemplatePath><![CDATA[Assets->Widgets]]></TemplatePath>
+    <FieldMapping>
+      <Field>col1</Field>  <!-- data to bring in for this field -->
+      <OutputCategory>ItemField</OutputCategory>
+      <OutputFieldName>Barcode</OutputFieldName>
+      <OutputFieldType>TEXT</OutputFieldType> 
+      <IncludeEmptyTag>false</IncludeEmptyTag> 
+    </FieldMapping>          
+  </TemplateAssociation>
+</AssetImportConverterProperties>

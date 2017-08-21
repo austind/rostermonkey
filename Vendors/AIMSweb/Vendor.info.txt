@@ -1,0 +1,4 @@
+  Vendor info:
+    - Login URL:     https://aimsweb.pearson.com/
+    - Support phone: (866) 313-6194
+    - No current online documentation; call support number above for info

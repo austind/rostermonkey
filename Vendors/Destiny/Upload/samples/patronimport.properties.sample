@@ -1,0 +1,166 @@
+#------------------------------------------------------------
+# PatronImportConverter configuration file
+#------------------------------------------------------------
+
+#------------------------------------------------------------
+# Default short site name
+# Uncomment the next line and adjust the value if CSV file 
+# does not contain site short name information. 
+#------------------------------------------------------------
+#SiteShortNameDefault=
+
+#------------------------------------------------------------
+# Default csv text encoding                                  
+#------------------------------------------------------------
+CsvTextEncoding=windows-1252
+
+#------------------------------------------------------------
+# Matching mode
+# true=match by District ID 
+# false=match by barcode/short site name
+#------------------------------------------------------------
+MatchUsingDistrictID=true
+
+#------------------------------------------------------------
+# The number of CSV rows to skip before the data begins
+#------------------------------------------------------------
+InputRowsToSkip=0
+
+#------------------------------------------------------------
+# Define the rules for when a record should be skipped.
+#------------------------------------------------------------
+SkipMode=or
+SkipWhen_1=field_districtID,
+SkipWhen_2={1},Unassigned
+SkipWhen_3={2},Inactive
+SkipMax=100
+
+#------------------------------------------------------------
+# Define the rules for when a record should be deleted.
+#------------------------------------------------------------
+DeleteMode=and
+DeleteWhen_1=field_status,Inactive
+DeleteMax=100
+
+#------------------------------------------------------------
+# Define the rules for when a site association is added.
+#------------------------------------------------------------
+#AssociationMode=or
+#AssociationWhen_1=field_patronType,Faculty
+#AssociationWhen_2={4},Banned
+AssociationMax=100
+
+#------------------------------------------------------------
+# CSV fields to Destiny field mapping -- Associates XML fields
+# that Destiny uses with incoming CSV fields.  For special
+# processing (concatenated and formatted fields), please
+# refer to the configuration guide.
+#------------------------------------------------------------
+field_siteShortName={1,map_siteShortName}
+field_barcode={2}
+field_districtID={3}
+field_lastName={4}
+field_firstName={5}
+field_middleName={6}
+field_nickname={7}
+field_gender={8}
+field_patronType={9}
+field_accessLevel={10,map_role}
+field_status={11}
+field_homeroom={12}
+field_gradeLevel={13}
+field_cardexpires={14}
+field_isAcceptableUsePolicyOnFile={15}
+field_isTeacher={16}
+field_userDefined1={17}
+field_userDefined2={18}
+field_userDefined3={19}
+field_userDefined4={20}
+field_userDefined5={21}
+field_graduationYear={22}
+field_birthdate={23}
+field_username={24}
+field_password={25}
+field_emailPrimary={26}
+field_emailSecondary={27}
+field_addressPrimaryLine1={28}
+field_addressPrimaryLine2={29}
+field_addressPrimaryCity={30}
+field_addressPrimaryState={31}
+field_addressPrimaryZipCode={32}
+field_addressSecondaryLine1={33}
+field_addressSecondaryLine2={34}
+field_addressSecondaryCity={35}
+field_addressSecondaryState={36}
+field_addressSecondaryZipCode={37}
+field_addressPrimaryPhoneNumberPrimary=({38,substring(1,3)}) {38,substring(4,3)}-{38,substring(7,4)} 
+field_addressPrimaryPhoneNumberSecondary={39}
+field_addressSecondaryPhoneNumberPrimary={40}
+field_addressSecondaryPhoneNumberSecondary={41}
+field_assetGroup={42}
+
+#------------------------------------------------------------
+# Define the specialized mapping values for the input data 
+# in the CSV file.
+#------------------------------------------------------------
+map_siteShortName_RWI=Landmark Elementary
+map_siteShortName_2=McHenry Middle School
+
+map_patrontype_default=Student
+map_patrontype_1=Student
+map_patrontype_2=Teacher
+
+map_role_default=Patron
+map_role_a=Admin
+map_role_F=Faculty
+map_role_2=Volunteer
+
+#------------------------------------------------------------
+# CSV input fields type mapping  -- Defines the type and
+# format of the incoming data in a given CSV field.  Please
+# refer to the configuration guide for valid values.
+#------------------------------------------------------------
+field_type_total=42
+field_type_1=string
+field_type_2=string
+field_type_3=string
+field_type_4=string
+field_type_5=string
+field_type_6=string
+field_type_7=string
+field_type_8=string
+field_type_9=string
+field_type_10=string
+field_type_11=string
+field_type_12=string
+field_type_13=string
+field_type_14=string
+field_type_15=string
+field_type_16=string
+field_type_17=string
+field_type_18=string
+field_type_19=string
+field_type_20=string
+field_type_21=string
+field_type_22=string
+field_type_23=string
+field_type_24=string
+field_type_25=string
+field_type_26=string
+field_type_27=string
+field_type_28=string
+field_type_29=string
+field_type_30=string
+field_type_31=string
+field_type_32=string
+field_type_33=string
+field_type_34=string
+field_type_35=string
+field_type_36=string
+field_type_37=string
+field_type_38=string
+field_type_39=string
+field_type_40=string
+field_type_41=string
+field_type_42=string
+

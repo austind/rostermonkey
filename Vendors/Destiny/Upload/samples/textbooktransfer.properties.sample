@@ -1,0 +1,10 @@
+# Path to the transfer file.
+# NOTE !!! - If running this command remotely from a machine other than the Destiny server,
+#            do not place it here, instead, place it on the command line as an argument
+transferFile = transferdata.txt
+
+
+# Enter the user name and password of a textbook cataloger.
+
+username = tbcataloger
+password = password

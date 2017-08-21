@@ -1,0 +1,12 @@
+  Vendor info:
+    - Login URL: https://connected.mcgraw-hill.com/
+    - Documentation: http://help.k12.mhedu.com/connected/
+    - Support Phone: (800) 437-3715
+    - Support Email: epgtech@mheducation.com
+
+    - Integration specialist: 
+    - Integration specialist email: 
+    - Bulk import support email: digitalsolutions@mheducation.com
+
+There is a lot of year-specific stuff in the SQL queries.
+Have a look at them before rolling over year to year.

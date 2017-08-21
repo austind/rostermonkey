@@ -1,0 +1,8 @@
+﻿Vendor info:
+ - Login URL:      https://techadmin.benchmarkuniverse.com/
+ - Admin account:  
+ - Admin password: 
+ - Login "Realm":  
+ - Documentation:  http://help.benchmarkuniverse.com/techadmin/
+ - Support email:  techsupport@benchmarkeducation.com
+ - Support phone:  (855) 245–9751 

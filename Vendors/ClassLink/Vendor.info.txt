@@ -1,0 +1,12 @@
+Vendor info:
+ - Login URL:      https://launchpad.classlink.com/admin/
+ - Username:       
+ - Password:       
+ - Documentation:  https://docs.classlink.com/
+ - Support email:  info@classlink.com
+ - Support phone:  (888) 963-7550
+
+Support rep:
+ - Name:   
+ - Email:  
+ - Direct: 

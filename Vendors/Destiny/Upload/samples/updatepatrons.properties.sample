@@ -1,0 +1,14 @@
+# Enter the user name and password of the user with
+# the ability to edit patrons.
+
+username = patron
+password = password
+
+# Set true to allow patrons to be deleted even if they have outstanding 
+# transactions.
+deletePatronsWithTransactions = false
+
+
+# Set true to allow job summary to only print errors and warnings.  Setting
+# it to false will display all messages in the job summary.
+limitToErrorsAndWarnings = true

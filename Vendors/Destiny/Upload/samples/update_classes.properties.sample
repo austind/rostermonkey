@@ -1,0 +1,11 @@
+# New with Destiny 8.0 this is no longer needed.
+# Path to the update file.
+# classFile = ../classdata/destiny_classes_final.xml
+
+
+# Enter the user name and password of the user with the ability 
+# to upload class schedules.
+
+
+username = DistrictTM
+password = 1234567

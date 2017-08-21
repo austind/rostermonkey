@@ -1,0 +1,66 @@
+#------------------------------------------------------------
+# PatronImportConverter configuration file (machine generated)
+# Do not place comments anywhere else than between the comment
+# block markers that follow.
+#------------------------------------------------------------
+
+#COMMENTS_BEGIN
+#COMMENTS_END
+
+#------------------------------------------------------------
+# Default short site name
+# Uncomment the next line and adjust the value if CSV file
+# does not contain site short name information.
+#------------------------------------------------------------
+SiteShortNameDefault=
+
+#------------------------------------------------------------
+# Matching mode
+# true=match by District ID
+# false=match by barcode/short site name
+#------------------------------------------------------------
+MatchUsingDistrictID=true
+
+#------------------------------------------------------------
+# The number of CSV rows to skip before the data begins
+#------------------------------------------------------------
+InputRowsToSkip=0
+
+#------------------------------------------------------------
+# Define the rules for when a record should be skipped.
+#------------------------------------------------------------
+SkipMode=and
+
+#------------------------------------------------------------
+# Define the rules for when a record should be deleted.
+#------------------------------------------------------------
+UpdateBeforeDelete=false
+DeleteMode=and
+
+#------------------------------------------------------------
+# CSV fields to Destiny field mapping -- Associates XML fields
+# that Destiny uses with incoming CSV fields.  For special
+# processing (concatenated and formatted fields), please
+# refer to the configuration guide.
+#------------------------------------------------------------
+field_siteShortName={2}
+field_barcode={1}
+field_districtID={1}
+field_lastName={3}
+field_firstName={4}
+field_accessLevel={6}
+field_gender={7}
+field_isTeacher={5}
+field_emailPrimary={8}
+
+#------------------------------------------------------------
+# Define the specialized mapping values for the input data
+# in the CSV file.
+#------------------------------------------------------------
+
+#------------------------------------------------------------
+# CSV input fields types -- Defines the type and format of
+# the incoming data in a given CSV field.  Please refer to
+# the configuration guide for valid values.
+#------------------------------------------------------------
+field_type_total=8

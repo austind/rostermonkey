@@ -1,0 +1,9 @@
+# Enter the user name and password of a user with
+# the ability to import Assets.
+
+username=patron
+password=password
+
+# Limit errors or warnings in the job summary
+limitErrorsAndWarnings=true
+

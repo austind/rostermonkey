@@ -1,0 +1,4 @@
+lcd "C:\Scripts\Export\Vendors\Illuminate\Export\"
+cd "/gridley"
+put "C:\Scripts\Export\Vendors\Illuminate\Export\student_portal_accounts.txt"
+quit

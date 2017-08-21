@@ -1,0 +1,9 @@
+Vendor info:
+  - Login URL:     https://login.i-ready.com/
+  - Documentation: http://www.i-ready.com/support/
+  - Support email: ?
+  - Support phone: (800) 225-0248
+
+Account specialist: 
+Account Specialist Email: 
+Account specialist Phone: 

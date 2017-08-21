@@ -1,0 +1,6 @@
+lcd "C:\Scripts\Export\Vendors\TypingClub\Export\"
+cd "/uploads"
+put "C:\Scripts\Export\Vendors\TypingClub\Export\Classes.csv"
+put "C:\Scripts\Export\Vendors\TypingClub\Export\Instructors.csv"
+put "C:\Scripts\Export\Vendors\TypingClub\Export\Students.csv"
+quit

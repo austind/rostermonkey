@@ -1,0 +1,70 @@
+#------------------------------------------------------------
+# PatronImportConverter configuration file (machine generated)
+# Do not place comments anywhere else than between the comment
+# block markers that follow.
+#------------------------------------------------------------
+
+#COMMENTS_BEGIN
+#COMMENTS_END
+
+#------------------------------------------------------------
+# Default short site name
+# Uncomment the next line and adjust the value if CSV file
+# does not contain site short name information.
+#------------------------------------------------------------
+SiteShortNameDefault=
+
+#------------------------------------------------------------
+# Matching mode
+# true=match by District ID
+# false=match by barcode/short site name
+#------------------------------------------------------------
+MatchUsingDistrictID=true
+
+#------------------------------------------------------------
+# The number of CSV rows to skip before the data begins
+#------------------------------------------------------------
+InputRowsToSkip=0
+
+#------------------------------------------------------------
+# Define the rules for when a record should be skipped.
+#------------------------------------------------------------
+SkipMode=and
+
+#------------------------------------------------------------
+# Define the rules for when a record should be deleted.
+#------------------------------------------------------------
+UpdateBeforeDelete=false
+DeleteMode=and
+
+#------------------------------------------------------------
+# CSV fields to Destiny field mapping -- Associates XML fields
+# that Destiny uses with incoming CSV fields.  For special
+# processing (concatenated and formatted fields), please
+# refer to the configuration guide.
+#------------------------------------------------------------
+field_siteShortName={2}
+field_barcode={1}
+field_districtID={3}
+field_lastName={4}
+field_firstName={5}
+field_middleName={6}
+field_gender={8}
+field_homeroom={10}
+field_gradeLevel={9}
+field_addressPrimaryLine2={11}
+field_addressPrimaryCity={12}
+field_addressPrimaryState={13}
+field_addressPrimaryZipCode={14}
+field_addressPrimaryPhoneNumberPrimary=({15,substring(1,3)}){15,substring(4,3)}-{15,substring(7,4)}
+
+#------------------------------------------------------------
+# Define the specialized mapping values for the input data
+# in the CSV file.
+#------------------------------------------------------------
+#------------------------------------------------------------
+# CSV input fields types -- Defines the type and format of
+# the incoming data in a given CSV field.  Please refer to
+# the configuration guide for valid values.
+#------------------------------------------------------------
+field_type_total=15
