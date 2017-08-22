@@ -32,6 +32,7 @@ If ($Date.Month -ge 7) {
 }
 
 # Hardcode it if you don't want auto-detection.
+#[string]$SQLDB = ''
 [string]$SQLDB       = 'DST' + [string]$SqlYear + '000' + [string]$SQLDBSuffix
 
 # -----------------------------------------------------------------------------
