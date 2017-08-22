@@ -48,7 +48,7 @@ In essence, RosterMonkey:
 
 Every vendor has its own `Vendor.script.ps1`, which is arbitrary code to execute after SQL exports have run. With this, you can do anything you like.
 
-For example, for Benchmark Universe wanted like $4k to enable SFTP support. I thought this pretty unreasonable, so I wrote a custom script that uploads data via their web frontend, using `Invoke-WebRequest`.
+For example, Benchmark Universe wanted like $4k to enable SFTP support. I thought this pretty unreasonable, so I wrote a custom script that uploads via their web frontend, using `Invoke-WebRequest`. It worked out really well, with much less hassle than I expected.
 
 I've also used the vendor script to copy exported data to the personal folder of the user responsible for manual uploads. Whenever they want to upload fresh data, they only have to look in that one place.
 
